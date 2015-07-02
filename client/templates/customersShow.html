@@ -49,7 +49,8 @@
         {{#each vehiles}}
           <!-- {{#ionItem path="contacts.show" buttonRight=true avatar=true class="item-icon-right"}} -->
           {{#ionItem path="amanjain" buttonRight=true avatar=true class="item-icon-right clickevent"}}
-            <!-- <img src="{{avatarUrl}}"> -->
+          {{vehicle.name}}
+            <img src="/images/{{vehicle.type}}">
             {{details.notes}}
             {{> ionIcon icon="ios-arrow-forward" class="positive"}}
           {{/ionItem}}

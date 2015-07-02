@@ -26,84 +26,6 @@ Customers.attachSchema(new SimpleSchema({
     },
     max: 200
   },
-  // vehicle: {
-  //   type: [Object],
-  //   optional: true
-  // },
-  // 'vehicle.$.name': {
-  //   type: String,
-  //   label: 'Vehicle Name',
-  //   autoform: {
-  //     'label-type': 'floating',
-  //     placeholder: 'Vehicle name'
-  //   },
-  //   max: 200
-  // },
-  // 'vehicle.$.number': {
-  //   type: String,
-  //   optional: true,
-  //   label: 'Vehicle Number',
-  //   // regEx: SimpleSchema.RegEx.Email,
-  //   autoform: {
-  //     'label-type': 'floating',
-  //     placeholder: 'Vehicle Number'
-  //   }
-  // },
-  // 'vehicle.$.chassis': {
-  //   type: String,
-  //   optional: true,
-  //   label: 'Chassis Number',
-  //   autoform: {
-  //     'label-type': 'floating',
-  //     placeholder: 'Chassis Number'
-  //   }
-  // },
-  // 'vehicle.$.type': {
-  //   type: String,
-  //   optional: true,
-  //   label: 'Type',
-  //   autoform: {
-  //     options: [
-  //       {value: 'Bike', label: 'Bike'},
-  //       {value: 'Scooter', label: 'Scooter'},
-  //       {value: 'Car', label: 'Car'},
-  //       {value: 'Truck', label: 'Truck'}
-  //     ],
-  //     'label-type': 'floating',
-  //     placeholder: 'Type'
-  //   }
-  // },
-  // 'vehicle.$.capacity': {
-  //   type: Number,
-  //   optional: true,
-  //   autoform: {
-  //     'label-type': 'floating',
-  //     placeholder: 'Capacity'
-  //   }
-  // },
-  // 'vehicle.$.uniqId' : {
-  //   type: String,
-  //   optional: true,
-  //   regEx: SimpleSchema.RegEx.Id,
-  //   autoform: {
-  //     'label-type': 'placeholder',
-  //     placeholder: 'Unique Id of vehicle'
-  //   }
-  // },
-  // details: {
-  //   type: Object,
-  //   optional: true
-  // },
-  // 'details.notes': {
-  //   type: String,
-  //   optional: true,
-  //   label: 'Notes',
-  //   optional: true,
-  //   autoform: {
-  //     rows: 10,
-  //     'label-type': 'stacked'
-  //   }
-  // }
   location: {
     type: Object
   },
@@ -126,18 +48,6 @@ Customers.attachSchema(new SimpleSchema({
       })
     }
   },
-  // 'location.$.type': {
-  //   type: String,
-  //   label: 'Label',
-  //   autoform: {
-  //     options: [
-  //       {value: 'Work', label: 'Work'},
-  //       {value: 'Home', label: 'Home'},
-  //       {value: 'School', label: 'School'},
-  //       {value: 'Other', label: 'Other'}
-  //     ]
-  //   }
-  // },
   details: {
     type: Object
   },

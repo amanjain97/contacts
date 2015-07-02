@@ -9,7 +9,7 @@ Vehicles = new Mongo.Collection('vehicles');
 Vehicles.attachSchema(new SimpleSchema({
   vehicle: {
     type: Object,
-    optional: true
+    // optional: true
   },
   'vehicle.name': {
     type: String,
@@ -22,7 +22,7 @@ Vehicles.attachSchema(new SimpleSchema({
   },
   'vehicle.number': {
     type: String,
-    optional: true,
+    // optional: true,
     label: 'Vehicle Number',
     // regEx: SimpleSchema.RegEx.Email,
     autoform: {
@@ -32,7 +32,7 @@ Vehicles.attachSchema(new SimpleSchema({
   },
   'vehicle.chassis': {
     type: String,
-    optional: true,
+    // optional: true,
     label: 'Chassis Number',
     autoform: {
       'label-type': 'floating',
@@ -41,14 +41,14 @@ Vehicles.attachSchema(new SimpleSchema({
   },
   'vehicle.type': {
     type: String,
-    optional: true,
+    // optional: true,
     label: 'Type',
     autoform: {
       options: [
-        {value: 'Bike', label: 'Bike'},
-        {value: 'Scooter', label: 'Scooter'},
-        {value: 'Car', label: 'Car'},
-        {value: 'Truck', label: 'Truck'}
+        {value: 'Bike.png', label: 'Bike'},
+        {value: 'Scooter.png', label: 'Scooter'},
+        {value: 'Car.png', label: 'Car'},
+        {value: 'Truck.png', label: 'Truck'}
       ],
       'label-type': 'floating',
       placeholder: 'Type'
@@ -56,7 +56,7 @@ Vehicles.attachSchema(new SimpleSchema({
   },
   'vehicle.capacity': {
     type: Number,
-    optional: true,
+    // optional: true,
     autoform: {
       'label-type': 'floating',
       placeholder: 'Capacity'
@@ -73,7 +73,7 @@ Vehicles.attachSchema(new SimpleSchema({
   },
   'vehicle.amount': {
     type: Number,
-    optional: true,
+    // optional: true,
     autoform: {
       'label-type': 'floating',
       placeholder: 'Amount'
@@ -81,11 +81,11 @@ Vehicles.attachSchema(new SimpleSchema({
   },
   details: {
     type: Object,
-    optional: true
+    // optional: true
   },
   'details.notes': {
     type: String,
-    optional: true,
+    // optional: true,
     label: 'Notes',
     optional: true,
     autoform: {
@@ -95,6 +95,6 @@ Vehicles.attachSchema(new SimpleSchema({
   },
   'customerId': {
     type: String,
-    optional: true
+    // optional: true
   }
 }));
