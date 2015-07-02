@@ -56,6 +56,8 @@ Vehicles.attachSchema(new SimpleSchema({
   },
   'vehicle.capacity': {
     type: Number,
+    min:1,
+    max:100,
     // optional: true,
     autoform: {
       'label-type': 'floating',
@@ -71,14 +73,14 @@ Vehicles.attachSchema(new SimpleSchema({
       placeholder: 'Unique Id of vehicle'
     }
   },
-  'vehicle.amount': {
-    type: Number,
-    // optional: true,
-    autoform: {
-      'label-type': 'floating',
-      placeholder: 'Amount'
-    }
-  },
+  // 'vehicle.amount': {
+  //   type: Number,
+  //   // optional: true,
+  //   autoform: {
+  //     'label-type': 'floating',
+  //     placeholder: 'Amount'
+  //   }
+  // },
   details: {
     type: Object,
     // optional: true
