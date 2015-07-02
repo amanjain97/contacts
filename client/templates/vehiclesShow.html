@@ -1,0 +1,48 @@
+<template name="vehiclesShow">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="customersShow" text="Vehicles"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Details</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" data-ion-modal="_vehiclesEdit" data-id="{{vehicle._id}}">Edit Vehicle</button>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent class="padding vehicle-detail"}}
+      {{#with vehicleS}}
+    
+      <!-- {{details.notes}} -->
+        <div class="list card">
+
+          <div class="item item-avatar">
+            <!-- <img src="{{avatarUrl}}"> -->
+            <h2>{{vehicle.number}}</h2>
+            <p>{{vehicle.name}}</p>
+            
+          </div>
+
+          <div class="item item-body">
+
+            <h4>Chassis Number</h4>
+            <p>
+              {{vehicle.chassis}}
+            </p>
+            <h4>Capacity</h4>
+            <p>
+              {{vehicle.capacity}}
+            </p>
+            <h4>Notes</h4>
+            <p>
+              {{details.notes}}
+            </p>
+          </div>
+
+        </div>
+      {{/with}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>

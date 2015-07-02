@@ -1,0 +1,15 @@
+<template name="_customersNew">
+  {{#ionModal customTemplate=true}}
+    {{#autoForm collection="Customers" id="customers-new-form" type="insert"}}
+      <div class="bar bar-header bar-stable">
+        <button data-dismiss="modal" type="button" class="button button-clear">Cancel</button>
+        <h2 class="title">Add customer</h2>
+        <button type="submit" class="button button-positive button-clear">Add</button>
+      </div>
+      <div class="content has-header overflow-scroll">
+        <!-- {{> afQuickFields omitFields="avatarUrl,details.active"}} -->
+        {{> afQuickFields}}
+      </div>
+    {{/autoForm}}
+  {{/ionModal}}
+</template>

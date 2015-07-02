@@ -1,0 +1,61 @@
+<template name="customersShow">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="customers" text="Customers"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Vehicles</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" data-ion-modal="_vehiclesNew">{{> ionIcon icon="ios-plus-empty"}}</button>
+  {{/contentFor}}
+
+<!--   {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" data-ion-modal="_customersEdit" data-id="{{customer._id}}">Edit</button>
+  {{/contentFor}} -->
+
+  {{#ionView}}
+    {{#ionContent class="padding customer-detail"}}
+      {{#with customer}}
+      <div class="profile-header">
+          <!-- {{> avatar user=this size="large" shape="circle"}}   -->   <!-- here the image of the customer in a circle-->
+          <h3>{{name.first}} {{name.last}}</h3>
+          <p>
+            {{location.address}}<br>
+            {{location.city}},&nbsp; {{location.state}}<br>
+          </p>
+          <p>
+            {{details.notes}}
+          </p>
+      </div>
+
+     {{/with}}
+      
+<!--      {{#ionList}}
+        {{#each vehicles}}
+          {{#ionItem path="vehicles.show" buttonRight=true avatar=true class="item-icon-right"}}
+            <h2>{{vehicle.number}}</h2>
+            <p>
+              {{vehicle.name}}
+            </p>
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+        {{/each}}
+     {{/ionList}} -->
+
+
+      {{#ionList}}
+        {{#each vehiles}}
+          <!-- {{#ionItem path="contacts.show" buttonRight=true avatar=true class="item-icon-right"}} -->
+          {{#ionItem path="amanjain" buttonRight=true avatar=true class="item-icon-right clickevent"}}
+            <!-- <img src="{{avatarUrl}}"> -->
+            {{details.notes}}
+            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{/ionItem}}
+        {{/each}}
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+
+</template>
