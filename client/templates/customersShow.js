@@ -5,16 +5,6 @@ Template.customersShow.created = function () {
   }.bind(this));
 };
 
-// Template.customersShow.rendered = function () {
-//   this.autorun(function () {
-//     if (!this.subscription.ready()) {
-//       IonLoading.show();
-//     } else {
-//       IonLoading.hide();
-//     }
-//   }.bind(this));
-// };
-
 Template.customersShow.helpers({
   customer: function () {
     return Customers.findOne({_id: Router.current().params._id});
