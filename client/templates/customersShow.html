@@ -4,13 +4,13 @@
   {{/contentFor}}
 
   {{#contentFor "headerTitle"}}
-    <h1 class="title"><button class="button button-clear" data-ion-modal="_customersEdit" data-id="{{customer._id}}">Edit</button></h1>
+    <h1 class="title"><button class="button button-clear" data-ion-modal="_customersEdit" data-id="{{customer._id}}" style="margin-top:5px;">Edit</button></h1>
 
   {{/contentFor}}
 
   {{#contentFor "headerButtonRight"}}
       
-      <button class="button button-clear" data-ion-modal="_vehiclesNew">{{> ionIcon icon="ios-plus-empty"}}</button>
+      <button class="button button-clear" data-ion-modal="_vehiclesNew">{{> ionIcon icon="android-add"}}</button>
 
   {{/contentFor}}
 
@@ -59,7 +59,8 @@
             <img src="/images/{{vehicle.type}}">
             <h2>{{vehicle.number}}</h2>
             <p>{{vehicle.name}}</p>
-            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+            <!-- {{> ionIcon icon="ios-arrow-forward" class="positive"}} -->
+            {{> ionIcon icon="android-arrow-dropright" class="positive"}}
           {{/ionItem}}
         {{/each}}
       {{/ionList}}
