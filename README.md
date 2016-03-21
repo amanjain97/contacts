@@ -1,2 +1,2 @@
 # Contacts
-It is a vehicles and contact management app. Right now, it is under construction and NFC support needs to be added made on Meteor JS platform for IOS and Android. Anyone can contribute to it and add the NFC support.
+It is a vehicles and contact management app. I used Meteor JS technology to work. In next phase, I need to add NFC tag support in it. 
